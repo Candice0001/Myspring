@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans>
+	<bean id="address" class="springIoc.myspring.bean.Address">
+		<property name="city" value="shenzhen" />
+	</bean>
+	<bean id="user" class="springIoc.myspring.bean.User">
+		<property name="userName" value="Mary" />
+		<property name="address" ref="address" />
+	</bean>
+	<bean id="student" class="springIoc.myspring.bean.Student" />
+</beans>
